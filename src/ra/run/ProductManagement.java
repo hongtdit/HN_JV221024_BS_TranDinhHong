@@ -37,6 +37,7 @@ public class ProductManagement {
                                 Product sp=new Product();
                                 sp.inputData();
                                 listProduct.add(sp);
+                                listProduct.get(i).inputData();
                             }
                             break;
                         case 2://THông tin san phẩm
@@ -75,7 +76,7 @@ public class ProductManagement {
                             int change= input.nextInt();
                             for (int i = 0; i <listProduct.size() ; i++) {
                                 if (listProduct.get(i).getProductid()==change){
-//                                    listProduct.get(i).setProductStatus();
+                                    listProduct.get(i).setProductStatus();
                                 }
                             }
 
