@@ -58,6 +58,7 @@ public class ProductManagement {
                                 if(listProduct.get(i).getProductid()==deleteProduct){
                                     listProduct.remove(i);
                                 }
+                                System.out.println("Xóa thành công");
                                 
                             }
 
