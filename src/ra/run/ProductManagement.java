@@ -48,7 +48,7 @@ public class ProductManagement {
                             break;
                         case 3:
                             Collections.sort(listProduct);
-                            System.out.println("mảng là");
+                            System.out.println("mảng sau khi sắp xếp là: ");
 
                             break;
                         case 4:
@@ -74,7 +74,7 @@ public class ProductManagement {
                             int change= input.nextInt();
                             for (int i = 0; i <listProduct.size() ; i++) {
                                 if (listProduct.get(i).getProductid()==change){
-                                    listProduct.get(i).setProductStatus();
+//                                    listProduct.get(i).setProductStatus();
                                 }
                             }
 

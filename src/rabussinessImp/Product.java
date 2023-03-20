@@ -4,7 +4,7 @@ import rabussiness.IProduct;
 
 import java.util.Scanner;
 
-public class Product implements IProduct {
+public class Product implements IProduct, Comparable<Product> {
     private int productid;
    private String productName,title,descriptions;
    private float importPrice,exportPrice,interest;
@@ -114,7 +114,7 @@ public class Product implements IProduct {
     }
 
     public void setInterest(float interest) {
-        this.interest = interest;
+        this.interest = this.exportPrice - this.importPrice;
     }
 
     public boolean isProductStatus() {
@@ -125,4 +125,8 @@ public class Product implements IProduct {
         this.productStatus = productStatus;
     }
 
+    @Override
+    public int compareTo(Product o) {
+        return (int) (this.getInterest() - o.getInterest());
+    }
 }
